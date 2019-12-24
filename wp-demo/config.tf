@@ -1,4 +1,3 @@
-#export TF_VAR_cluster_name=<cluster-name>
 data "digitalocean_kubernetes_cluster" "terra" {
   name = var.cluster_name
 }

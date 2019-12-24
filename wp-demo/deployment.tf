@@ -1,9 +1,3 @@
-#export TF_VAR_DEP_NAME=<deployment-name>
-#export TF_VAR_PV_NAME=<persistent volume name>
-#export TF_VAR_PVC_NAME=<persistent volume claim name>
-#export TF_VAR_DB_HOST=<database host>
-#export TF_VAR_DB_USER=<database user>
-#export TF_VAR_DB_PASS=<database password>
 resource "kubernetes_deployment" "wordpress-dep" {
     metadata {
         name = var.DEP_NAME
